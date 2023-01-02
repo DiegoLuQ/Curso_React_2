@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* #5651e5 */
+
+:root {
+    --primary-dark: #5651e5;
+    
+    --primary-light: #709dff;
+}
+
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+    body {
+        @apply font-[Poppins] bg-gradient-to-r from-[#ffffff] to-[#d4d4d4]
+    }
+    li {
+        @apply p-4 text-sm
+    }
+    button {
+        @apply px-4 py-2 border rounded-full bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white hover:hover-style ease-in-out duration-700;
+    }
+    h2 {
+        @apply text-xl font-bold
+    }
+    .hover-style {
+        @apply bg-gradient-to-r from-[#3f3bb9] to-[#7692cf]
+    }
+
+
+}
